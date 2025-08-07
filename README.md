@@ -17,7 +17,7 @@ This is a simple **ASP.NET Core MVC** web application to manage a collection of 
 
 ## 🛠️ Built With
 
-- ASP.NET Core MVC (.NET 9)
+- ASP.NET Core MVC (.NET 8)
 - C# Language
 - Razor Pages
 - In-Memory Data Storage
@@ -27,4 +27,35 @@ This is a simple **ASP.NET Core MVC** web application to manage a collection of 
 ---
 
 ## 📂 Project Structure
+MCIT_WebApp/
+│
+├── Controllers/
+│ └── MoviesController.cs
+│
+├── Models/
+│ └── Movie.cs
+│
+├── Views/
+│ └── Movies/
+│ ├── Index.cshtml
+│ ├── Details.cshtml
+│ ├── Create.cshtml
+│ ├── Edit.cshtml
+│ └── Delete.cshtml
+│
+├── wwwroot/
+│ └── css/
+│ └── movies.css
+│
+├── Program.cs
+├── Startup.cs
+└── README.md
+
+🧑‍💻 Developer
+Mahmoud Reda
+Back-End Developer – MCIT Internship
+GitHub: @mahmoudreda4424
+
+
+
 
