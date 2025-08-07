@@ -26,6 +26,15 @@ This is a simple **ASP.NET Core MVC** web application to manage a collection of 
 
 ---
 
+## 🧑‍💻 How to Run
 
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/mahmoudreda4424/MCIT_WebApp.git
+   
+## 📫 Contact
+
+- LinkedIn: [Mahmoud Reda](linkedin.com/in/mahmoudredaprofile)
 
 
