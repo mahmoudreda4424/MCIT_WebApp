@@ -35,6 +35,6 @@ This is a simple **ASP.NET Core MVC** web application to manage a collection of 
    
 ## 📫 Contact
 
-- LinkedIn: [Mahmoud Reda](linkedin.com/in/mahmoudredaprofile)
+- LinkedIn: [Mahmoud Reda](https://www.linkedin.com/in/mahmoudredaprofile/)
 
 
