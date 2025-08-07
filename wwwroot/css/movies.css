@@ -1,0 +1,59 @@
+﻿
+form.mb-4 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .form-control {
+    height: 48px;
+    font-size: 16px;
+    padding-left: 15px;
+    border-radius: 8px 0 0 8px; 
+}
+
+
+form .btn {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0; 
+    transition: 0.3s ease-in-out;
+}
+    form .btn:hover {
+        background-color: #0d6efd;
+        color: white;
+        border-color: #0d6efd;
+    }
+
+    form .btn i {
+        margin-right: 5px;
+    }
+
+
+.movie-card {
+    background-color: #f9f9ff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+    .movie-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+.movie-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.movie-genre {
+    font-style: italic;
+    color: #666;
+}
+
+.movie-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745;
+}

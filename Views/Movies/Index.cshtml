@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebApp.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<link rel="stylesheet" href="~/css/movies.css" />
+
+<div class="container mt-4">
+     <form asp-controller="Movies" asp-action="Index" method="get" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="searchString" class="form-control" placeholder="🔍 Search by title..." />
+            <button type="submit" class="btn btn-outline-primary">
+                <i class="fa fa-search"></i> Search
+            </button>
+        </div>
+    </form>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>🎬 Movie Collection</h1>
+        <a asp-action="Create" class="btn btn-custom">➕ Add New Movie</a>
+    </div>
+
+    <div class="row">
+        @foreach (var movie in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card movie-card" data-title="@movie.Title">
+                    <div class="card-body">
+                        <h5 class="movie-title">@movie.Title</h5>
+                        <p class="movie-genre">@movie.Genre</p>
+                        <p class="text-muted">Released: @movie.ReleaseDate.ToShortDateString()</p>
+                        <p class="movie-price">$@movie.Price M</p>
+                        <a asp-action="Details" asp-route-id="@movie.Id" class="btn-action btn-details btn-sm">Details</a>
+                        <a asp-action="Edit" asp-route-id="@movie.Id" class="btn-action btn-edit btn-sm">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@movie.Id" class="btn-action btn-delete btn-sm">Delete</a>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".movie-card");
+            cards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    if (!e.target.closest("a")) {
+                        alert(`You clicked on: ${card.dataset.title}`);
+                    }
+                });
+            });
+        });
+    </script>
+}
+

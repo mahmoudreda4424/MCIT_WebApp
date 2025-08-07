@@ -1,0 +1,46 @@
+﻿.details-container {
+    background: #f9f9ff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+    .details-container h1 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .details-container dl dt {
+        font-weight: bold;
+        color: #6c757d;
+    }
+
+    .details-container dl dd {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+.btn-edit {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+    .btn-edit:hover {
+        background: linear-gradient(135deg, #fd7e14, #ffc107);
+        transform: translateY(-2px);
+    }
+
+.back-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+    .back-link:hover {
+        color: #0056b3;
+    }

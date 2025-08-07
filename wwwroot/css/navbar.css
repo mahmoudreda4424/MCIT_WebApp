@@ -1,0 +1,88 @@
+﻿/* ================= NAVBAR ================= */
+.navbar {
+    background: linear-gradient(135deg, #007bff, #6610f2) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+    .navbar-nav .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-nav .nav-link.active {
+        background: #ffc107;
+        color: black !important;
+    }
+
+/* ================= FOOTER ================= */
+footer.footer {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+}
+
+/* ================= BUTTONS GENERAL ================= */
+.btn-action {
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+    .btn-custom:hover {
+        background: linear-gradient(135deg, #20c997, #28a745);
+        transform: translateY(-2px);
+    }
+
+/* ================= SPECIFIC BUTTONS ================= */
+.btn-details {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+    .btn-details:hover {
+        background: linear-gradient(135deg, #0056b3, #007bff);
+        transform: translateY(-2px);
+    }
+
+.btn-edit {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+}
+
+    .btn-edit:hover {
+        background: linear-gradient(135deg, #fd7e14, #ffc107);
+        transform: translateY(-2px);
+    }
+
+.btn-delete {
+    background: linear-gradient(135deg, #dc3545, #b21f2d);
+}
+
+    .btn-delete:hover {
+        background: linear-gradient(135deg, #b21f2d, #dc3545);
+        transform: translateY(-2px);
+    }
+.btn-action,
+.btn-custom,
+.btn-details,
+.btn-edit,
+.btn-delete {
+    text-decoration: none !important;
+    cursor: pointer;
+}
